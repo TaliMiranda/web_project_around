@@ -1,0 +1,12 @@
+# http://editorconfig.org
+
+# Ajuste para true para parar a busca de arquivo .editorconfig no arquivo atual
+root = true
+
+# Codificação de caracteres de arquivo. Valores possíveis — latin1, utf-8, utf-16be, utf-16le
+charset = utf-8
+
+# Indentation override for all JS under lib directory
+[lib/**.js]
+indent_style = space
+indent_size = 2
