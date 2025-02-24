@@ -1,0 +1,131 @@
+.profile {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 0 auto 50px;
+    max-width: 880px;
+    color: #ffffff;
+  }
+  
+  .profile__image {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .profile__wrapper-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .profile__wrapper-name-and-edit-button {
+    display: flex;
+    gap: 18px;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 289px;
+    max-width: 390px;
+  }
+  
+  .profile__name {
+    margin: 0 0 16px;
+    font-size: 42px;
+    line-height: 48px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .profile__edit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+  }
+  
+  .profile__edit-icon {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .profile__role {
+    margin: 0;
+    font-size: 18px;
+    line-height: 21.78px;
+    min-width: 87.69px;
+    max-width: 67.7px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .profile__add-card-button {
+    width: 100%;
+    height: 50px;
+    max-width: 150px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+  }
+  
+  @media screen and (max-width: 880px) {
+    .profile {
+      flex-direction: column;
+    }
+  
+    .profile__wrapper-texts {
+      align-items: center;
+    }
+  
+    .profile__add-card-button {
+      max-width: unset;
+    }
+  }
+  
+  @media screen and (max-width: 720px) {
+    .profile {
+      padding: 42px 19px 36px;
+      margin: 0 auto;
+    }
+  
+    .profile__wrapper-name-and-edit-button {
+      gap: 10px;
+      justify-content: center;
+    }
+  
+    .profile__add-card-icon {
+      width: 16px;
+      height: 16px;
+    }
+  
+    .profile__name {
+      margin: 0 0 14px;
+      font-size: 22px;
+      line-height: 26.63px;
+    }
+  
+    .profile__edit-button {
+      margin-bottom: 20px;
+      width: 18px;
+      height: 18px;
+    }
+  
+    .profile__edit-icon {
+      width: 7.5px;
+      height: 7.5px;
+    }
+  
+    .profile__role {
+      margin-bottom: 36px;
+      font-size: 14px;
+      line-height: 16.94px;
+      text-align: center;
+    }
+  }

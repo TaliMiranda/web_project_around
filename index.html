@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Web Project Around</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img
+          class="header__logo"
+          src="images/logo-around-the-us.svg"
+          alt="Logo Around the U.S"
+        />
+      </header>
+      <main class="content">
+        <section class="profile">
+          <img
+            class="profile__image"
+            src="images/profile.jpg"
+            alt="Imagem de homem de óculos sorrindo com gorro vermelho"
+          />
+          <div class="profile__wrapper-texts">
+            <div class="profile__wrapper-name-and-edit-button">
+              <h1 class="profile__name">Jacques Cousteau</h1>
+              <button class="profile__edit-button">
+                <img
+                  class="profile__edit-icon"
+                  src="images/edit-icon.svg"
+                  alt="Icone de edição"
+                />
+              </button>
+            </div>
+            <p class="profile__about">Explorador</p>
+          </div>
+          <button class="profile__add-button">
+            <img
+              class="profile__add-card-icon"
+              src="images/add-card-icon.svg"
+              alt="Add card button"
+            />
+          </button>
+        </section>
+        <div class="elements">
+          <template id="template">
+            <div class="elements__card">
+              <button type="button" class="elements__delete-button">
+                <img
+                  class="elements__delete-icon"
+                  src="images/trash.png"
+                  alt="delete button icon"
+                />
+              </button>
+              <img class="elements__card-image" src="#" alt="" />
+              <div class="elements__wrapper-text-and-like-button">
+                <p class="elements__card-name"></p>
+                <button type="button" class="elements__like-button">
+                  <img
+                    class="elements__like-icon"
+                    src="images/like-button.png"
+                    alt="like button icon"
+                  />
+                </button>
+              </div>
+            </div>
+          </template>
+        </div>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">© 2024 Around The U.S.</p>
+      </footer>
+      <div class="popup">
+        <div class="popup__container">
+          <img
+            class="popup__close-button"
+            src="images/close-icon.png"
+            alt="Botão de fechar o popup"
+          />
+          <h2 class="popup__title">Editar perfil</h2>
+          <form class="popup__form">
+            <input
+              id="input-name"
+              class="popup__input"
+              type="text"
+              placeholder="Nome"
+              value="Jacques Cousteau"
+            />
+            <span id="input-name-error" class="popup__form-error"></span>
+            <input
+              id="input-role"
+              class="popup__input"
+              type="text"
+              placeholder="Sobre mim"
+              value="Explorador"
+            />
+            <span id="input-role-error" class="popup__form-error"></span>
+            <button id="save-button" class="popup__save-button" type="submit">
+              Salvar
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="popup popup-add-card">
+        <div class="popup__container">
+          <img
+            class="popup__close-button popup-add-card__close-button"
+            src="images/close-icon.png"
+            alt="Botão de fechar o popup"
+          />
+          <h2 class="popup__title">Novo local</h2>
+          <form class="popup__form popup__add-card-form">
+            <input
+              id="input-location-name"
+              class="popup__input"
+              type="text"
+              placeholder="Nome*"
+              required
+            />
+            <span
+              id="input-location-name-error"
+              class="popup__form-error"
+            ></span>
+            <input
+              id="input-image"
+              class="popup__input"
+              type="text"
+              placeholder="Sobre mim*"
+              required
+            />
+            <span id="input-image-error" class="popup__form-error"></span>
+            <button
+              id="create-button"
+              class="popup__save-button popup-add-card__create-button"
+              type="submit"
+            >
+              Salvar
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="popup popup-view-image">
+        <div class="popup__container popup-view-image__image-container">
+          <img
+            class="popup__close-button popup-view-image__close-button"
+            src="images/close-icon.png"
+            alt="Botão de fechar o popup"
+          />
+          <div class="popup-view-image__image-container">
+            <img class="popup-view-image__render-image" src="#" alt="Popup Imagem" />
+            <span class="popup-view-image__image-title"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
